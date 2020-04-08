@@ -1,14 +1,15 @@
 import os
 from twilio.rest import Client
 
-account_sid = ACOUNT_SID
-auth_token = TOKE_ID
+account_sid = ''
+auth_token = ''
 
 client = Client(account_sid, auth_token)
 
-sms = 'SMS'
-phono = 'PHONE_NO'
+sms = ''
+phono = ''
+recno = ''
 
-client.messages.create(to=phono, from_='+19045483041', body=sms)
+client.messages.create(to=phono, from_=rec_no, body=sms)
 
 print("SMS sent: " + sms + " \nto: " + phono)
